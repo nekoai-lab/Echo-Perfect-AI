@@ -31,6 +31,12 @@ This project uses a hybrid architecture for speed and scalability.
 *   **Speech Synthesis:** gTTS (Google Text-to-Speech)
 *   **Deployment:** [Vercel](https://vercel.com/) (Serverless Functions)
 
+## ⚠️ デプロイとスケーラビリティに関する注記
+
+本アプリケーションは、**Vercel Hobby Plan**（Serverless Functionsのタイムアウトが**10秒**）での動作に最適化されています。
+*   **現在の制限:** タイムアウト内で処理を完了させるため、録音は短いフレーズ（最大5〜10秒）に制限されています。
+*   **将来的な拡張性:** より長い音声処理や高い同時接続数が必要な本番環境では、タイムアウト制限を回避するために **Google Cloud Run** や AWS Lambda へのバックエンド移行を推奨します。
+
 ## 📂 Project Structure
 
 ```bash

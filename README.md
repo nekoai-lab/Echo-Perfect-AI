@@ -10,7 +10,8 @@
 
 ## 📸 Screen Shot
 
-<img width="819" height="1212" alt="image" src="https://github.com/user-attachments/assets/219860c2-f4f0-4be7-a22c-49e1aeb9d12a" />
+<img width="1965" height="1191" alt="image" src="https://github.com/user-attachments/assets/f08cfa8e-943f-49a4-9e6f-8232ac20aeb2" />
+
 
 ## ✨ Key Features
 

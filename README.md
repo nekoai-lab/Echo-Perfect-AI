@@ -10,7 +10,7 @@
 
 ## 📸 Screen Shot
 
-*(ここにアプリのスクリーンショット画像をドラッグ＆ドロップで貼り付けてください)*
+<img width="819" height="1212" alt="image" src="https://github.com/user-attachments/assets/219860c2-f4f0-4be7-a22c-49e1aeb9d12a" />
 
 ## ✨ Key Features
 

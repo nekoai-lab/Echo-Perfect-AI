@@ -1,0 +1,67 @@
+Starting Probe...
+Client initialized.
+--- Listing Models ---
+Found: models/embedding-gecko-001 | Embedding Gecko
+Found: models/gemini-2.5-flash | Gemini 2.5 Flash
+Found: models/gemini-2.5-pro | Gemini 2.5 Pro
+Found: models/gemini-2.0-flash-exp | Gemini 2.0 Flash Experimental
+Found: models/gemini-2.0-flash | Gemini 2.0 Flash
+Found: models/gemini-2.0-flash-001 | Gemini 2.0 Flash 001
+Found: models/gemini-2.0-flash-exp-image-generation | Gemini 2.0 Flash (Image Generation) Experimental
+Found: models/gemini-2.0-flash-lite-001 | Gemini 2.0 Flash-Lite 001
+Found: models/gemini-2.0-flash-lite | Gemini 2.0 Flash-Lite
+Found: models/gemini-2.0-flash-lite-preview-02-05 | Gemini 2.0 Flash-Lite Preview 02-05
+Found: models/gemini-2.0-flash-lite-preview | Gemini 2.0 Flash-Lite Preview
+Found: models/gemini-exp-1206 | Gemini Experimental 1206
+Found: models/gemini-2.5-flash-preview-tts | Gemini 2.5 Flash Preview TTS
+Found: models/gemini-2.5-pro-preview-tts | Gemini 2.5 Pro Preview TTS
+Found: models/gemma-3-1b-it | Gemma 3 1B
+Found: models/gemma-3-4b-it | Gemma 3 4B
+Found: models/gemma-3-12b-it | Gemma 3 12B
+Found: models/gemma-3-27b-it | Gemma 3 27B
+Found: models/gemma-3n-e4b-it | Gemma 3n E4B
+Found: models/gemma-3n-e2b-it | Gemma 3n E2B
+Found: models/gemini-flash-latest | Gemini Flash Latest
+Found: models/gemini-flash-lite-latest | Gemini Flash-Lite Latest
+Found: models/gemini-pro-latest | Gemini Pro Latest
+Found: models/gemini-2.5-flash-lite | Gemini 2.5 Flash-Lite
+Found: models/gemini-2.5-flash-image-preview | Nano Banana
+Found: models/gemini-2.5-flash-image | Nano Banana
+Found: models/gemini-2.5-flash-preview-09-2025 | Gemini 2.5 Flash Preview Sep 2025
+Found: models/gemini-2.5-flash-lite-preview-09-2025 | Gemini 2.5 Flash-Lite Preview Sep 2025
+Found: models/gemini-3-pro-preview | Gemini 3 Pro Preview
+Found: models/gemini-3-flash-preview | Gemini 3 Flash Preview
+Found: models/gemini-3-pro-image-preview | Nano Banana Pro
+Found: models/nano-banana-pro-preview | Nano Banana Pro
+Found: models/gemini-robotics-er-1.5-preview | Gemini Robotics-ER 1.5 Preview
+Found: models/gemini-2.5-computer-use-preview-10-2025 | Gemini 2.5 Computer Use Preview 10-2025
+Found: models/deep-research-pro-preview-12-2025 | Deep Research Pro Preview (Dec-12-2025)
+Found: models/embedding-001 | Embedding 001
+Found: models/text-embedding-004 | Text Embedding 004
+Found: models/gemini-embedding-exp-03-07 | Gemini Embedding Experimental 03-07
+Found: models/gemini-embedding-exp | Gemini Embedding Experimental
+Found: models/gemini-embedding-001 | Gemini Embedding 001
+Found: models/aqa | Model that performs Attributed Question Answering.
+Found: models/imagen-4.0-generate-preview-06-06 | Imagen 4 (Preview)
+Found: models/imagen-4.0-ultra-generate-preview-06-06 | Imagen 4 Ultra (Preview)
+Found: models/imagen-4.0-generate-001 | Imagen 4
+Found: models/imagen-4.0-ultra-generate-001 | Imagen 4 Ultra
+Found: models/imagen-4.0-fast-generate-001 | Imagen 4 Fast
+Found: models/veo-2.0-generate-001 | Veo 2
+Found: models/veo-3.0-generate-001 | Veo 3
+Found: models/veo-3.0-fast-generate-001 | Veo 3 fast
+Found: models/veo-3.1-generate-preview | Veo 3.1
+Found: models/veo-3.1-fast-generate-preview | Veo 3.1 fast
+Found: models/gemini-2.5-flash-native-audio-latest | Gemini 2.5 Flash Native Audio Latest
+Found: models/gemini-2.5-flash-native-audio-preview-09-2025 | Gemini 2.5 Flash Native Audio Preview 09-2025
+Found: models/gemini-2.5-flash-native-audio-preview-12-2025 | Gemini 2.5 Flash Native Audio Preview 12-2025
+Found: models/lyria-realtime-exp | Lyria Realtime Experimental
+
+--- Probing Candidates ---
+INVALID (404): gemini-3-flash
+INVALID (404): gemini-3.0-flash
+INVALID (404): gemini-3.0-flash-preview
+INVALID (404): gemini-3.0-flash-001
+INVALID (404): gemini-exp-1219
+VALID: gemini-2.0-flash-exp
+INVALID (404): gemini-experimental

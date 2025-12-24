@@ -21,7 +21,7 @@ interface AnalysisResultProps {
 export default function AnalysisResult({ data, isLoading }: AnalysisResultProps) {
     if (isLoading) {
         return (
-            <div className="w-full max-w-md p-6 bg-gray-900/50 rounded-xl border border-indigo-500/30 flex flex-col items-center gap-3 animate-pulse">
+            <div className="w-full max-w-md mx-auto p-6 bg-gray-900/50 rounded-xl border border-indigo-500/30 flex flex-col items-center gap-3 animate-pulse">
                 <Activity className="w-8 h-8 text-indigo-400 animate-spin" />
                 <p className="text-gray-300 text-sm">Analyzing via Gemini 3 Flash...</p>
                 <p className="text-indigo-400/50 text-xs">Comparing waveforms & phonemes</p>
@@ -32,7 +32,7 @@ export default function AnalysisResult({ data, isLoading }: AnalysisResultProps)
     if (!data) return null;
 
     return (
-        <div className="w-full max-w-md space-y-6 animate-in slide-in-from-bottom-4 fade-in duration-500">
+        <div className="w-full max-w-md mx-auto space-y-6 animate-in slide-in-from-bottom-4 fade-in duration-500">
             {/* Overall Score Card */}
             <div className="relative overflow-hidden bg-gradient-to-br from-indigo-900 to-purple-900 rounded-2xl p-6 text-center shadow-xl border border-indigo-500/20">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-50"></div>

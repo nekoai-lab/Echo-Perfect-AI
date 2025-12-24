@@ -31,54 +31,6 @@ This project uses a hybrid architecture for speed and scalability.
 *   **Speech Synthesis:** gTTS (Google Text-to-Speech)
 *   **Deployment:** [Vercel](https://vercel.com/) (Serverless Functions)
 
-
-## 🏗️ Architecture
-
-```mermaid
-graph TD
-    User((👤 User))
-    Frontend[💻 Frontend / Next.js]
-    Gemini[✨ Google Cloud / Gemini 3 Flash]
-
-    subgraph "Vercel Serverless (10s Timeout)"
-        Backend[🐍 Backend / FastAPI]
-        TTS[🔊 gTTS Engine]
-        Mem[("🧠 In-Memory (BytesIO)")];
-    end
-
-    %% User Interaction
-    User -->|Voice Input| Frontend
-    Frontend -->|Real-time Feedback| User
-
-    %% Vercel Internal Process
-    Frontend -->|"POST User Audio & Text"| Backend
-    Backend -->|"Text"| TTS
-    TTS -->|"MP3 Bytes"| Mem
-    Mem -.->|"No Disk I/O"| Backend
-
-    %% API Call
-    Backend -->|"Analyze (User Audio + Ref Bytes)"| Gemini
-    Gemini -->|"Analysis JSON"| Backend
-    Backend -->|"Result + Ref Audio"| Frontend
-
-    %% Style
-    style Gemini fill:#fffbf0,stroke:#f59e0b,stroke-width:2px
-    style Backend fill:#eef2ff,stroke:#6366f1,stroke-width:2px
-    style Mem fill:#fce7f3,stroke:#ec4899,stroke-dasharray: 5 5
-```
-
-### ⚠️ デプロイとスケーラビリティに関する注記
-
-本アプリケーションは、**Vercel Hobby Plan**（Serverless Functionsのタイムアウトが**10秒**）での動作に最適化されています。
-*   **現在の制限:** タイムアウト内で処理を完了させるため、録音は短いフレーズ（最大5〜10秒）に制限されています。
-*   **将来的な拡張性:** より長い音声処理や高い同時接続数が必要な本番環境では、タイムアウト制限を回避するために **Google Cloud Run** や AWS Lambda へのバックエンド移行を推奨します。
-
-## ⚠️ デプロイとスケーラビリティに関する注記
-
-本アプリケーションは、**Vercel Hobby Plan**（Serverless Functionsのタイムアウトが**10秒**）での動作に最適化されています。
-*   **現在の制限:** タイムアウト内で処理を完了させるため、録音は短いフレーズ（最大5〜10秒）に制限されています。
-*   **将来的な拡張性:** より長い音声処理や高い同時接続数が必要な本番環境では、タイムアウト制限を回避するために **Google Cloud Run** や AWS Lambda へのバックエンド移行を推奨します。
-
 ## 📂 Project Structure
 
 ```bash

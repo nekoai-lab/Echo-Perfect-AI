@@ -42,6 +42,8 @@ def health_check():
 async def generate_reference(request: TTSRequest):
     if not request.text:
         raise HTTPException(status_code=400, detail="Text is required")
+    if len(request.text) > 100:
+        raise HTTPException(status_code=400, detail="Text exceeds 100 character limit")
     
     try:
         # Generate Audio in memory
@@ -75,6 +77,9 @@ async def analyze_audio(
         # Check payload size roughly
         if len(ref_bytes) + len(user_bytes) > 4.5 * 1024 * 1024:
              raise HTTPException(status_code=413, detail="Payload too large (Max 4.5MB)")
+        
+        if len(target_text) > 100:
+             raise HTTPException(status_code=400, detail="Text exceeds 100 character limit")
 
         prompt = f"""
         You are an expert phonetic coach for Japanese learners. 

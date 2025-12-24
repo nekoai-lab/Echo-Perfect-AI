@@ -186,13 +186,19 @@ export default function Home() {
                             </button>
                         </div>
 
-                        <textarea
-                            value={targetText}
-                            onChange={(e) => setTargetText(e.target.value)}
-                            className="w-full bg-[#13131f] border border-gray-700/50 rounded-2xl p-5 text-gray-100 text-xl leading-relaxed focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all resize-none shadow-inner"
-                            rows={3}
-                            placeholder="Type something to practice..."
-                        />
+                        <div className="relative">
+                            <textarea
+                                value={targetText}
+                                onChange={(e) => setTargetText(e.target.value)}
+                                maxLength={100}
+                                className="w-full bg-[#13131f] border border-gray-700/50 rounded-2xl p-5 pr-4 pb-8 text-gray-100 text-xl leading-relaxed focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all resize-none shadow-inner"
+                                rows={3}
+                                placeholder="Type something to practice..."
+                            />
+                            <div className="absolute bottom-3 right-4 text-xs font-medium text-gray-500">
+                                {targetText.length}/100
+                            </div>
+                        </div>
                     </div>
 
                     <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
